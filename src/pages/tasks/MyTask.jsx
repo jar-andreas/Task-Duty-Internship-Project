@@ -15,9 +15,12 @@ export default function MyTask() {
         <h1 className="font-medium text-3xl lg:text-4xl">My Tasks</h1>
         <div className="flex items-center gap-2">
           <Plus size={18} className="text-(--primary-color)" />
-          <button className="text-(--primary-color) cursor-pointer font-medium rounded">
+          <Link
+            to="/new-task"
+            className="text-(--primary-color) cursor-pointer font-medium rounded"
+          >
             Add New Task
-          </button>
+          </Link>
         </div>
       </div>
       <div className="mt-8 border border-gray-300 rounded-lg py-4 px-2 mb-6">
@@ -40,7 +43,7 @@ export default function MyTask() {
         <hr className="my-4 border-gray-300" />
         <div className="my-4">
           <h1 className="text-xl font-medium">FinTech Website Update</h1>
-          <p className="text-(--lorem-color) mt-2">
+          <p className="text-base-content opacity-65 mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet quis
             nibh posuere non tempor. Erat mattis gravida pulvinar nibh aliquam
             faucibus et magna. Interdum eu tempus ultricies cras neque mi. Eget
@@ -68,7 +71,7 @@ export default function MyTask() {
         <hr className="my-4 border-gray-300" />
         <div className="my-4">
           <h1 className="text-xl font-medium">FinTech Website Update</h1>
-          <p className="text-(--lorem-color) mt-2">
+          <p className="text-base-content opacity-65 mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet quis
             nibh posuere non tempor. Erat mattis gravida pulvinar nibh aliquam
             faucibus et magna. Interdum eu tempus ultricies cras neque mi. Eget
@@ -96,7 +99,7 @@ export default function MyTask() {
         <hr className="my-4 border-gray-300" />
         <div className="my-4">
           <h1 className="text-xl font-medium">FinTech Website Update</h1>
-          <p className="text-(--lorem-color) mt-2">
+          <p className="text-base-content opacity-65 mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet quis
             nibh posuere non tempor. Erat mattis gravida pulvinar nibh aliquam
             faucibus et magna. Interdum eu tempus ultricies cras neque mi. Eget
@@ -124,7 +127,7 @@ export default function MyTask() {
         <hr className="my-4 border-gray-300" />
         <div className="my-4">
           <h1 className="text-xl font-medium">FinTech Website Update</h1>
-          <p className="text-(--lorem-color) mt-2">
+          <p className="text-base-content opacity-65 mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet quis
             nibh posuere non tempor. Erat mattis gravida pulvinar nibh aliquam
             faucibus et magna. Interdum eu tempus ultricies cras neque mi. Eget

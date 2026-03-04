@@ -20,31 +20,32 @@ export default function NewTask() {
         />
         <h1 className="font-medium text-3xl lg:text-4xl">New Task</h1>
       </div>
-      <div className="relative mt-10">
-        <input
-          type="text"
-          placeholder="E.g. Project Defense, Assignment..."
-          className="input h-16 input-bordered w-full px-7 py-4 outline-none"
-        />
-        <label className="absolute -top-3 left-7 bg-white text-lg text-(--lorem-color)">
-          Task Title
-        </label>
+      <div className="mt-10">
+        <fieldset className="border border-gray-300 rounded w-full">
+          <legend className="ml-5 text-lg text-(--lorem-color) mb-2">
+            Task Title
+          </legend>
+          <textarea
+            placeholder="E.g. Project Defense, Assignment..."
+            className="w-full h-8 outline-none px-5 text-xs border-none rounded resize-none"
+          />
+        </fieldset>
       </div>
-      <div className="relative mt-10">
-        <textarea
-          placeholder="Briefly describe your task..."
-          className="textarea textarea-lg h-45 w-full outline-none px-7 py-4 placeholder:text-sm placeholder:font-light placeholder:text-(--lorem-color) rounded resize-none"
-        />
-        <label className="absolute -top-3 left-7 bg-white text-lg text-(--lorem-color)">
-          Description
-        </label>
+      <div className="mt-10">
+        <fieldset className="border border-gray-300 rounded w-full">
+          <legend className="ml-5 text-lg text-(--lorem-color) mb-2">
+            Description
+          </legend>
+          <textarea
+            placeholder="Briefly describe your task..."
+            className="w-full h-40 outline-none px-5 text-xs border-none rounded resize-none"
+          />
+        </fieldset>
       </div>
       <div className="mt-10 relative">
-        <div className="border border-gray-300 p-6 rounded">
-          <label className="absolute -top-3 left-7 bg-white text-lg text-(--lorem-color)">
-            Tags
-          </label>
-          <div className="flex items-center justify-between">
+        <fieldset className="border border-gray-300 rounded w-full">
+          <legend className="ml-5 text-lg text-(--lorem-color)">Tags</legend>
+          <div className="flex items-center justify-between h-8 mt-2 mb-4 px-5">
             <div className="flex items-center gap-4 ">
               <span className="bg-(--tags-color) text-white rounded px-4 py-1 text-xs cursor-pointer">
                 Urgent
@@ -53,9 +54,9 @@ export default function NewTask() {
                 Important
               </span>
             </div>
-            <ChevronDown size={30} className="text-(--tags-color)" />
+            <ChevronDown size={30} className="cursor-pointer text-(--tags-color)"/>
           </div>
-        </div>
+        </fieldset>
       </div>
       <div className="flex flex-col gap-4">
         <button className="bg-(--primary-color) text-white text-lg rounded w-full px-6 py-2 mt-10">

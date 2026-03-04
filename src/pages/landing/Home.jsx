@@ -13,7 +13,7 @@ export default function Home() {
               TaskDuty
             </span>
           </h1>
-          <p className="my-6 text-lg text-(--lorem-color)">
+          <p className="my-6 text-lg text-base-content opacity-65">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non tellus,
             sapien, morbi ante nunc euismod ac felis ac. Massa et, at platea
             tempus duis non eget. Hendrerit tortor fermentum bibendum mi nisl
