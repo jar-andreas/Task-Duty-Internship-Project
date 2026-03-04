@@ -18,7 +18,7 @@ export default function Drawer() {
             className="drawer-overlay"
             onClick={() => setIsOpen(false)}
           ></label>
-          <div className="menu bg-base-100 text-base-content min-h-screen w-70 p-4">
+          <div className="menu bg-white min-h-screen w-70 p-4">
             <Link to="/">
               <img src="Group 2.png" alt="Logo" />
             </Link>
@@ -28,7 +28,7 @@ export default function Drawer() {
             >
               <X />
             </button>
-            <div className="mt-6 flex flex-col gap-4 border-t border-base-300 pb-4">
+            <div className="mt-6 flex flex-col gap-4">
               <Link
                 to="/new-task"
                 onClick={() => setIsOpen(false)}

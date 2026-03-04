@@ -10,7 +10,7 @@ export default function Nav() {
   const isEditOrNewTaskPage =
     location.pathname === "/edit-task" || location.pathname === "/new-task";
   return (
-    <header className="fixed top-0 left-0 w-full bg-base-100 border-b border-base-300 z-50">
+    <header className="fixed top-0 left-0 w-full bg-white z-50">
       <div className="container mx-auto px-6 lg:px-20 py-4">
         <div className="flex items-center justify-between">
           <Link to="/">
