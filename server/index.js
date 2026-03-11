@@ -3,17 +3,22 @@ import cors from "cors";
 import { createServer } from "http";
 import mongoose from "mongoose";
 import morgan from "morgan";
-import { catchNotFoundRoute, globalErrorHandler } from "./src/middleware/errorHandler.js";
-
+import {
+  catchNotFoundRoute,
+  globalErrorHandler,
+} from "./src/middleware/errorHandler.js";
 
 //import api routes
-import userRoutes from "./src/route/user.route.js"
+import userRoutes from "./src/route/user.route.js";
 
 const app = express();
 const httpServer = createServer(app);
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://task-duty-internship-project.vercel.app",
+    ],
     credentials: true,
     methods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     optionsSuccessStatus: 200,
