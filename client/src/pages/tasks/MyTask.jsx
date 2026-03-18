@@ -121,7 +121,7 @@ export default function MyTask() {
       </label>
       <div className="mt-8 mb-6">
         {isPending && (
-          <div className="flex justify-center py-20">
+          <div className="flex justify-center">
             <LazySpinner />
           </div>
         )}
