@@ -41,7 +41,7 @@ export default function Drawer({handleLogout}) {
                       to="/new-task"
                       onClick={() => setIsOpen(false)}
                       className="font-medium text-xl mt-3"
-                    >
+                    > 
                       New Task
                     </Link>
                     <Link

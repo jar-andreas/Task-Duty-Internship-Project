@@ -165,7 +165,7 @@ export default function MyTask() {
               <hr className="my-4 border-gray-300" />
               <div className="my-4">
                 <h1 className="text-xl font-medium">{task.title}</h1>
-                <p className="text-base-content opacity-65 mt-2">
+                <p className="text-base-content opacity-65 mt-2 wrap-break-word overflow-hidden">
                   {task.description}
                 </p>
               </div>
