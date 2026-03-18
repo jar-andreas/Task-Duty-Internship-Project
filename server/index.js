@@ -10,6 +10,7 @@ import {
 
 //import api routes
 import userRoutes from "./src/route/user.route.js";
+import taskRoutes from "./src/route/task.route.js";
 
 const app = express();
 const httpServer = createServer(app);
@@ -51,6 +52,7 @@ app.get("/", (req, res) => {
 
 //assemble api routes
 app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/task", taskRoutes);
 
 //handle app errors
 app.use((req, res, next) => {

@@ -51,7 +51,7 @@ export default function AppRoutes() {
           element: <NewTask />,
         },
         {
-          path: "edit-task",
+          path: "edit-task/:id",
           element: <EditTask />,
         },
       ],

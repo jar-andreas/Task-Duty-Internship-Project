@@ -1,7 +1,6 @@
 import { useAuth } from "@/hooks/useAuth";
 import { ChevronDown, LogOut, User } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function UserAvatar() {
   const { user, handleLogout } = useAuth();
